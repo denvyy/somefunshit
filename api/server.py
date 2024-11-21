@@ -51,6 +51,3 @@ def index():
     img.save(buf, format="PNG")
     buf.seek(0)
     return send_file(buf, mimetype="image/png")
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
